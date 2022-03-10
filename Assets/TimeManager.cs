@@ -33,7 +33,7 @@ public class TimeManager : MonoBehaviour
     {
         timeToDisplay += 1;
         float seconds = Mathf.FloorToInt(timeToDisplay);
-        TimeText.text = $"Time Remaining : {seconds} Sce";
+        TimeText.text = $"Time Remaining : {seconds} Sec";
     }
 
     public void TimeRanOut()

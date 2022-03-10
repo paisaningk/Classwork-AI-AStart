@@ -7,9 +7,7 @@ public class Customer : MonoBehaviour
 {
     public bool IsEnable = false;
     public Renderer Renderer;
-    public float TimeCh;
     public bool IsSelect = false;
-    public bool IsBuild;
     public GameObject Line;
     public GameObject Line01 = null;
 

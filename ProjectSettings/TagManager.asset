@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Waypoint
   - Shop
+  - shop
   layers:
   - Default
   - TransparentFX

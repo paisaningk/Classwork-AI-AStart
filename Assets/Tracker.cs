@@ -9,7 +9,7 @@ public class Tracker : MonoBehaviour
     public int StartWaypoint = 0;
     public float TrackDistanceStopWaitingPlayer;
     public Transform player;
-    private GameObject currentNode;
+    public GameObject currentNode;
     private GameObject[] waypoints;
     private Graph graph;
     private int currentWaypoint = 0;
@@ -26,6 +26,18 @@ public class Tracker : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            if (GameManager.ReachTheDestination)
+            {
+                if (currentNode != waypoints[0])
+                {
+                    graph.AStar(currentNode,waypoints[0]);
+                    waypoints[0].GetComponent<Renderer>().material.color = Color.red;
+                    currentWaypoint = 0;
+                }
+            }
+        }
     
         if (graph.getPathLength() == 0 || currentWaypoint == graph.getPathLength())
         {
@@ -48,18 +60,14 @@ public class Tracker : MonoBehaviour
         if (currentWaypoint < graph.getPathLength())
         {
             goal = graph.getPathPoint(currentWaypoint);
-            var goalP = goal.transform.position;
-            transform.LookAt(new Vector3(goalP.x,0,goalP.z));
+            transform.LookAt(goal.transform.position);
             transform.Translate(0,0,Speed * Time.deltaTime);
         }
     }
 
     public void Move(GameObject index)
     {
-        if (currentNode != index)
-        {
-            graph.AStar(currentNode,index);
-            currentWaypoint = 0;
-        }
+        graph.AStar(currentNode,index);
+        currentWaypoint = 0;
     }
 }

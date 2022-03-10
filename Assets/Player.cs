@@ -4,38 +4,32 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public GameObject tracker;
+    public GameObject Tracker;
     public int MaxFood = 1;
     public int CurrentFood;
     public int Speed;
     public float RotSpeed;
     public int Score;
 
-    public void Start()
-    {
-        transform.position = tracker.transform.position;
-    }
-
     // Update is called once per frame
     void Update()
     {
-        float distance = Vector3.Distance(transform.position, tracker.transform.position);
+        float distance = Vector3.Distance(transform.position, Tracker.transform.position);
         
         if (distance < 0.2)
         {
             return;
         }
         
-        Quaternion loolatWP = Quaternion.LookRotation( tracker.transform.position - transform.position);
-        transform.rotation = Quaternion.Slerp(transform.rotation, loolatWP, RotSpeed * Time.deltaTime);
+        Quaternion loolatWp = Quaternion.LookRotation( Tracker.transform.position - transform.position);
+        transform.rotation = Quaternion.Slerp(transform.rotation, loolatWp, RotSpeed * Time.deltaTime);
         transform.Translate(0,0,Speed * Time.deltaTime);
     }
     
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Shop"))
+        if (other.CompareTag("shop"))
         {
-            Debug.Log(CurrentFood <= MaxFood);
             if (CurrentFood < MaxFood)
             {
                 CurrentFood = MaxFood;
@@ -44,16 +38,16 @@ public class Player : MonoBehaviour
 
         if (other.CompareTag("Waypoint"))
         {
-            var Customer = other.GetComponent<Customer>();
+            var customer = other.GetComponent<Customer>();
             
-            if (Customer.IsEnable)
+            if (customer.IsEnable)
             {
                 if (CurrentFood > 0)
                 {
                     Score++;
                     CurrentFood -= 1;
-                    Customer.IsEnable = false;
-                    Customer.Line01.SetActive(false);
+                    customer.IsEnable = false;
+                    customer.Line01.SetActive(false);
                 }
             }
         }

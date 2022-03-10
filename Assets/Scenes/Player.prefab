@@ -42,7 +42,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5581442763278105451}
-  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: -3674350701814561546, guid: 326ae73822ec0fc4f8da206ee9e82339, type: 3}
 --- !u!23 &5581442763278105452
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 4cfca80b8b433c74ba83c9c22ca496b6, type: 2}
+  - {fileID: 2100000, guid: b4255c446ddd41e4d950bff26b7dbf7f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -92,7 +92,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5581442763278105451}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 1.76
   m_Height: 2
@@ -111,10 +111,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tracker: {fileID: 0}
-  MaxFood: 1
+  MaxFood: 3
   CurrentFood: 0
-  Speed: 5
-  RotSpeed: 3
+  Speed: 20
+  RotSpeed: 5
+  Score: 0
 --- !u!54 &5581442763278105441
 Rigidbody:
   m_ObjectHideFlags: 0

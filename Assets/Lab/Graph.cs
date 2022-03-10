@@ -18,7 +18,7 @@ public class Graph {
         {
             return;
         }
-        if (id.CompareTag("Shop"))
+        if (id.CompareTag("shop"))
         {
             return;
         }

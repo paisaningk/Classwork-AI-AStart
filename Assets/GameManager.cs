@@ -33,7 +33,7 @@ public class GameManager : MonoBehaviour
     public float NextTime;
     public float CurrentTime;
     private GameObject hitgameObject = null;
-    public bool ReachTheDestination = true;
+    public static bool ReachTheDestination = true;
     public GameObject Line;
 
     public void Start()
@@ -45,15 +45,15 @@ public class GameManager : MonoBehaviour
         {
             SetupNodeAndLink();
         }
-
     }
 
     public void Update()
     {
         Graph.debugDraw();
-        Ray rayCamera0 = Camera[0].ScreenPointToRay(Input.mousePosition) ;
+        Ray rayCamera0 = Camera[0].ScreenPointToRay(Input.mousePosition);
         Ray rayCamera1 = Camera[1].ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
+        
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             if (ReachTheDestination)
@@ -74,18 +74,25 @@ public class GameManager : MonoBehaviour
             var distance = Vector3.Distance(PlayerGameObject.transform.position, hitgameObject.transform.position);
             if (distance < 1.2)
             {
-                hitgameObject.GetComponent<Renderer>().material.color = Color.white;
-                var a = hitgameObject.transform.gameObject.GetComponent<Customer>();
-                a.IsSelect = false;
-                ReachTheDestination = true;
+                if (hitgameObject.CompareTag("Waypoint"))
+                {
+                    hitgameObject.GetComponent<Renderer>().material.color = Color.white;
+                    var a = hitgameObject.transform.gameObject.GetComponent<Customer>();
+                    a.IsSelect = false;
+                    ReachTheDestination = true;
+                }
             }
         }
 
-        if (CurrentTime < Time.time)
+        if (CurrentTime < 0)
         {
             var a = Random.Range(0, Customers.Count);
             Customers[a].gameObject.GetComponent<Customer>().IsEnable = true;
             CurrentTime += NextTime;
+        }
+        else
+        {
+            CurrentTime -= Time.deltaTime;
         }
 
     }
@@ -116,8 +123,14 @@ public class GameManager : MonoBehaviour
 
     public void CheckHit(GameObject hit)
     {
+        if (hit == Tracker.currentNode)
+        {
+            return;
+        }
+        
         var hitGameObject = hit.transform.gameObject;
         Tracker.Move(hitGameObject);
+        
         hitGameObject.GetComponent<Renderer>().material.color = Color.red;
         ReachTheDestination = false;
                     
