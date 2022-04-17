@@ -110,11 +110,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d09792e109a9c5b4f8003a2991b2933d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tracker: {fileID: 0}
+  Tracker: {fileID: 0}
   MaxFood: 3
   CurrentFood: 0
   Speed: 20
-  RotSpeed: 5
+  RotSpeed: 7
   Score: 0
 --- !u!54 &5581442763278105441
 Rigidbody:

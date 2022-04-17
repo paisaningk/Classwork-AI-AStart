@@ -32,6 +32,7 @@ public class Player : MonoBehaviour
         {
             if (CurrentFood < MaxFood)
             {
+                Debug.Log("adc");
                 CurrentFood = MaxFood;
             }
         }

@@ -948,7 +948,7 @@ GameObject:
   - component: {fileID: 72049759}
   m_Layer: 6
   m_Name: Cube (2)
-  m_TagString: Untagged
+  m_TagString: Waypoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1302,11 +1302,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 94505237}
   m_LocalRotation: {x: 0.43914393, y: 0.63453853, z: -0.4569254, w: 0.44241685}
-  m_LocalPosition: {x: -21, y: 45, z: 57}
+  m_LocalPosition: {x: -24.13173, y: 44.234615, z: 52.76095}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_Father: {fileID: 247289108}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 75.568, y: 140.017, z: 37.872}
 --- !u!1001 &96279485
 PrefabInstance:
@@ -2660,6 +2660,40 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6404504755027836676, guid: e9444643f4068cc4b9ca0021e03a25a2, type: 3}
   m_PrefabInstance: {fileID: 242886525}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &247289107
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 247289108}
+  m_Layer: 0
+  m_Name: Light and city
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &247289108
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 247289107}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.1317298, y: 0.76538575, z: 4.23905}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1037853226}
+  - {fileID: 94505239}
+  - {fileID: 1400411340}
+  - {fileID: 1729776767}
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &254285085
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5522,7 +5556,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &531679738
 GameObject:
@@ -5656,7 +5690,7 @@ GameObject:
   - component: {fileID: 536455516}
   m_Layer: 6
   m_Name: Cube
-  m_TagString: Shop
+  m_TagString: shop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8667,12 +8701,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 887678296}
   m_LocalRotation: {x: 0.11176919, y: 0.05179749, z: -0.0058338977, w: 0.9923662}
-  m_LocalPosition: {x: -0.94, y: 2.06, z: -8.98}
+  m_LocalPosition: {x: -3.85, y: 2.06, z: -0.30999947}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 575523646}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1001 &890294949
 PrefabInstance:
@@ -9522,7 +9556,7 @@ RectTransform:
   - {fileID: 1089686887}
   - {fileID: 178334717}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -9641,7 +9675,7 @@ GameObject:
   - component: {fileID: 1006079239}
   m_Layer: 6
   m_Name: Cube (3)
-  m_TagString: Untagged
+  m_TagString: Waypoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10179,11 +10213,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1037853224}
   m_LocalRotation: {x: 0.4732171, y: -0.17271818, z: 0.19495556, w: 0.8415619}
-  m_LocalPosition: {x: 36, y: 63, z: 20}
+  m_LocalPosition: {x: 32.86827, y: 62.234615, z: 15.76095}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_Father: {fileID: 247289108}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 59.749, y: -12.169, z: 19.078}
 --- !u!1001 &1038718037
 PrefabInstance:
@@ -10515,7 +10549,7 @@ GameObject:
   - component: {fileID: 1099611521}
   m_Layer: 6
   m_Name: Cube (9)
-  m_TagString: Untagged
+  m_TagString: Waypoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10672,7 +10706,7 @@ GameObject:
   - component: {fileID: 1117687413}
   m_Layer: 6
   m_Name: Cube (7)
-  m_TagString: Untagged
+  m_TagString: Waypoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11009,7 +11043,7 @@ GameObject:
   - component: {fileID: 1134988046}
   m_Layer: 6
   m_Name: Cube (6)
-  m_TagString: Untagged
+  m_TagString: Waypoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11632,7 +11666,7 @@ GameObject:
   - component: {fileID: 1163091107}
   m_Layer: 6
   m_Name: Cube (11)
-  m_TagString: Untagged
+  m_TagString: Waypoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12193,7 +12227,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1242372062
 PrefabInstance:
@@ -13153,14 +13187,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1718436125226468757, guid: 84db5c210f1a3c14899afa1bba7d3d0b, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1718436125226468758, guid: 84db5c210f1a3c14899afa1bba7d3d0b, type: 3}
-      propertyPath: Speed
-      value: 35
-      objectReference: {fileID: 0}
     - target: {fileID: 1718436125226468758, guid: 84db5c210f1a3c14899afa1bba7d3d0b, type: 3}
       propertyPath: player
       value: 
@@ -13169,29 +13195,13 @@ PrefabInstance:
       propertyPath: GameManager
       value: 
       objectReference: {fileID: 1819450073}
-    - target: {fileID: 1718436125226468758, guid: 84db5c210f1a3c14899afa1bba7d3d0b, type: 3}
-      propertyPath: StartWaypoint
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1718436125226468758, guid: 84db5c210f1a3c14899afa1bba7d3d0b, type: 3}
-      propertyPath: WayPointMangager
-      value: 
-      objectReference: {fileID: 1819450073}
-    - target: {fileID: 1718436125226468758, guid: 84db5c210f1a3c14899afa1bba7d3d0b, type: 3}
-      propertyPath: TrackDistanceStopWaitingPlayer
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 1718436125226468759, guid: 84db5c210f1a3c14899afa1bba7d3d0b, type: 3}
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1718436125226468759, guid: 84db5c210f1a3c14899afa1bba7d3d0b, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1718436125226468759, guid: 84db5c210f1a3c14899afa1bba7d3d0b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -2.9099998
       objectReference: {fileID: 0}
     - target: {fileID: 1718436125226468759, guid: 84db5c210f1a3c14899afa1bba7d3d0b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -13199,7 +13209,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1718436125226468759, guid: 84db5c210f1a3c14899afa1bba7d3d0b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 8.67
       objectReference: {fileID: 0}
     - target: {fileID: 1718436125226468759, guid: 84db5c210f1a3c14899afa1bba7d3d0b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -13845,7 +13855,7 @@ GameObject:
   - component: {fileID: 1382959093}
   m_Layer: 6
   m_Name: Cube (8)
-  m_TagString: Untagged
+  m_TagString: Waypoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13940,7 +13950,7 @@ GameObject:
   - component: {fileID: 1389810703}
   m_Layer: 6
   m_Name: Cube (4)
-  m_TagString: Untagged
+  m_TagString: Waypoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14185,7 +14195,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1400411339}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 40, y: 0, z: 70}
+  m_LocalPosition: {x: 36.86827, y: -0.76538575, z: 65.76095}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 385631815}
@@ -14288,8 +14298,8 @@ Transform:
   - {fileID: 1029305583}
   - {fileID: 1759779839}
   - {fileID: 320989116}
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_Father: {fileID: 247289108}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1410382189
 PrefabInstance:
@@ -15383,7 +15393,7 @@ GameObject:
   - component: {fileID: 1507211307}
   m_Layer: 6
   m_Name: Cube (12)
-  m_TagString: Untagged
+  m_TagString: Waypoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15540,7 +15550,7 @@ GameObject:
   - component: {fileID: 1514486047}
   m_Layer: 6
   m_Name: Cube (10)
-  m_TagString: Untagged
+  m_TagString: Waypoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16460,32 +16470,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 5581442763278105450, guid: ab5963328546ad249b6974df7ec2640a, type: 3}
-      propertyPath: Speed
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 5581442763278105450, guid: ab5963328546ad249b6974df7ec2640a, type: 3}
-      propertyPath: MaxFood
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5581442763278105450, guid: ab5963328546ad249b6974df7ec2640a, type: 3}
-      propertyPath: tracker
+      propertyPath: Tracker
       value: 
       objectReference: {fileID: 1676458380}
-    - target: {fileID: 5581442763278105450, guid: ab5963328546ad249b6974df7ec2640a, type: 3}
-      propertyPath: RotSpeed
-      value: 7
-      objectReference: {fileID: 0}
     - target: {fileID: 5581442763278105451, guid: ab5963328546ad249b6974df7ec2640a, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 5581442763278105452, guid: ab5963328546ad249b6974df7ec2640a, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: b4255c446ddd41e4d950bff26b7dbf7f, type: 2}
-    - target: {fileID: 5581442763278105453, guid: ab5963328546ad249b6974df7ec2640a, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5581442763278105454, guid: ab5963328546ad249b6974df7ec2640a, type: 3}
       propertyPath: m_RootOrder
@@ -16493,7 +16483,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5581442763278105454, guid: ab5963328546ad249b6974df7ec2640a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -2.9099998
       objectReference: {fileID: 0}
     - target: {fileID: 5581442763278105454, guid: ab5963328546ad249b6974df7ec2640a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -16501,7 +16491,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5581442763278105454, guid: ab5963328546ad249b6974df7ec2640a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 8.67
       objectReference: {fileID: 0}
     - target: {fileID: 5581442763278105454, guid: ab5963328546ad249b6974df7ec2640a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -16531,10 +16521,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5581442763278105455, guid: ab5963328546ad249b6974df7ec2640a, type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: -3674350701814561546, guid: 326ae73822ec0fc4f8da206ee9e82339, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab5963328546ad249b6974df7ec2640a, type: 3}
 --- !u!1 &1676458380 stripped
@@ -16932,7 +16918,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1729776766}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 20, y: 0.020111084, z: 84}
+  m_LocalPosition: {x: 16.86827, y: -0.74527466, z: 79.76095}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children:
   - {fileID: 337843714}
@@ -17029,8 +17015,8 @@ Transform:
   - {fileID: 283391836}
   - {fileID: 641986803}
   - {fileID: 540801422}
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_Father: {fileID: 247289108}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1738055225
 PrefabInstance:
@@ -17851,7 +17837,6 @@ MonoBehaviour:
   StartTime: 1
   NextTime: 5
   CurrentTime: 0
-  ReachTheDestination: 1
   Line: {fileID: 7360687451389995010, guid: e37b51c20213f7e43bdb9103c2d45495, type: 3}
 --- !u!4 &1819450074
 Transform:
@@ -17891,7 +17876,7 @@ Transform:
   - {fileID: 501902624}
   - {fileID: 44387930}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1829265991
 PrefabInstance:
@@ -17969,7 +17954,7 @@ GameObject:
   - component: {fileID: 1831636300}
   m_Layer: 6
   m_Name: Cube (1)
-  m_TagString: Untagged
+  m_TagString: Waypoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18766,7 +18751,7 @@ GameObject:
   - component: {fileID: 1944894821}
   m_Layer: 6
   m_Name: Cube (13)
-  m_TagString: Untagged
+  m_TagString: Waypoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19710,7 +19695,7 @@ Transform:
   - {fileID: 1247616762}
   - {fileID: 326377286}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2049947501
 MonoBehaviour:
@@ -20375,7 +20360,7 @@ GameObject:
   - component: {fileID: 2123964051}
   m_Layer: 6
   m_Name: Cube (5)
-  m_TagString: Untagged
+  m_TagString: Waypoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20844,7 +20829,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1309435389634475951, guid: 85cd725601f1e55458fccaf6dabf9448, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.63
+      value: 2.72
       objectReference: {fileID: 0}
     - target: {fileID: 1309435389634475951, guid: 85cd725601f1e55458fccaf6dabf9448, type: 3}
       propertyPath: m_LocalPosition.y
@@ -20852,7 +20837,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1309435389634475951, guid: 85cd725601f1e55458fccaf6dabf9448, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7.59
+      value: 16.26
       objectReference: {fileID: 0}
     - target: {fileID: 1309435389634475951, guid: 85cd725601f1e55458fccaf6dabf9448, type: 3}
       propertyPath: m_LocalRotation.w

@@ -98,7 +98,7 @@ MonoBehaviour:
   GameManager: {fileID: 0}
   Speed: 35
   StartWaypoint: 0
-  TrackDistanceStopWaitingPlayer: 4
+  TrackDistanceStopWaitingPlayer: 5
   player: {fileID: 0}
   currentNode: {fileID: 0}
 --- !u!65 &1718436125226468762
